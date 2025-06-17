@@ -40,5 +40,5 @@ gridSectionNode.forEach(function(item, index){
 const arrayGrid = Array.from(gridSectionHtml);
 
 arrayGrid.forEach(function(item){
-    console.log(item);s
+    console.log(item);
 })
