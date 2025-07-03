@@ -67,3 +67,19 @@ console.log(ultimoP[-- ultimoP.lenght])
 */
 
 //FOREACH
+const imgs = document.querySelectorAll('img');
+
+imgs.forEach(function(img){
+  console.log(img)
+});
+
+// é necessario transformar array´sLike em array antes de implementar o foreach
+const titulos = document.getElementsByClassName('titulo');
+const titulosArray = Array.from(titulos);
+
+console.log(titulos);
+console.log(titulosArray);
+
+titulosArray.forEach(function(item, index, array){
+  console.log(item, index, array);
+});
