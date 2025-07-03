@@ -66,14 +66,14 @@ ou é possivel fazer ded uma forma mais resumida essa ultima linha
 console.log(ultimoP[-- ultimoP.lenght])
 */
 
-//FOREACH
+/* **FOREACH**
 const imgs = document.querySelectorAll('img');
 
 imgs.forEach(function(img){
   console.log(img)
 });
 
-// é necessario transformar array´sLike em array antes de implementar o foreach
+é necessario transformar array´sLike em array antes de implementar o foreach
 const titulos = document.getElementsByClassName('titulo');
 const titulosArray = Array.from(titulos);
 
@@ -83,3 +83,56 @@ console.log(titulosArray);
 titulosArray.forEach(function(item, index, array){
   console.log(item, index, array);
 });
+
+
+
+
+ **ARROWFUNCTION ** 
+const imgs = document.querySelectorAll('img');
+
+imgs.forEach((item, index, array) => {
+  console.log(item, index, array)
+});
+
+ PARTICULARIDADES DA SINTAXE 
+-----> argumento único não precisa de parênteses mas sempre vamos colocar para manter um padrao
+imgs.forEach(item => {
+  console.log(item);
+});
+é possivel tirar as chaves '{}' quando tiver só em 1 linha
+let i = 0;
+imgs.forEach((item) => console.log(i++));
+
+-----> multiplos argumentos utilizam parênteses
+imgs.forEach((item, index) => {
+  console.log(item, index);
+  });
+
+-----> sem argumentos precisa dos parênteses 'vazio'
+let i = 0;
+imgs.forEach(() => {
+  console.log(i++);
+  });
+*/
+
+
+//Exercícios
+//Monstre no console cada parágrafo do site
+// const paragrafo = document.querySelectorAll('p')
+// paragrafo.forEach((item) =>{
+//   console.log(item)
+// });
+
+// //Mostre o texto dos parágrafos no console
+// paragrafo.forEach((item) =>{
+//   console.log(item.innerText)
+// });
+// // Como corrigir os erros abaixo
+// const images = document.querySelectorAll('img');
+
+// images.forEach((item, index)  => {
+//   console.log(item, index);
+// });
+
+// let i = 0;
+// images.forEach(() => console.log(i++));
