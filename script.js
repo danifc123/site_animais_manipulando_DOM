@@ -58,6 +58,10 @@ console.log(linkAtividade);
 const primeiroH2 = document.querySelector('.animais-descricao h2')
 console.log(primeiroH2)
 // Selecione o último p do site
-const ultimoP = document.querySelectorAll('p')
-console.log(ultimoP[ultimoP.length - 1]);
-//console.log(ultimoP[--ultimoP.length ]); mesma coisa que a linha de cima mas mais limpo
+
+const ultimoP = document.querySelectorAll('p');
+console.log(ultimoP[ultimoP.length - 1])
+/* 
+ou é possivel fazer ded uma forma mais resumida essa ultima linha
+console.log(ultimoP[-- ultimoP.lenght])
+*/
