@@ -117,22 +117,40 @@ imgs.forEach(() => {
 
 
 //Exercícios
-//Monstre no console cada parágrafo do site
-// const paragrafo = document.querySelectorAll('p')
-// paragrafo.forEach((item) =>{
-//   console.log(item)
-// });
+/*
+// Mostre no console cada parágrado do site
+const paragrafo = document.querySelectorAll('p');
 
-// //Mostre o texto dos parágrafos no console
-// paragrafo.forEach((item) =>{
-//   console.log(item.innerText)
-// });
-// // Como corrigir os erros abaixo
-// const images = document.querySelectorAll('img');
+paragrafo.forEach((item)=>{
+    console.log(item);
+});
+// E agora com a mesma variavel mostre o texto dos parágrafos no console
+paragrafo.forEach((item) => {
+    console.log(item.innerText);
+});
 
-// images.forEach((item, index)  => {
-//   console.log(item, index);
-// });
+// Como corrigir os erros abaixo:
+const imgs = document.querySelectorAll('img');
 
-// let i = 0;
-// images.forEach(() => console.log(i++));
+imgs.forEach((item, index) => {
+  console.log(item, index);
+});
+
+let i = 0;
+imgs.forEach(()=> {
+  console.log(i++);
+});
+
+imgs.forEach(() => i++);
+
+*/
+
+//Exercícios
+// Adicione a classe ativo a todos os itens do menu
+
+// Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+
+// Verifique se as imagens possuem o atributo alt
+
+// Modifique o href do link externo no menu
+
