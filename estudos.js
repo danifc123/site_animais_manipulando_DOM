@@ -145,6 +145,7 @@ imgs.forEach(() => i++);
 
 */
 
+
 //Exercícios
 // Adicione a classe ativo a todos os itens do menu
 
