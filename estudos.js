@@ -148,9 +148,18 @@ imgs.forEach(() => i++);
 
 //Exercícios
 // Adicione a classe ativo a todos os itens do menu
+const menu = document.querySelectorAll('.menu a')
 
+menu.forEach((item)=>{
+  item.classList.add('ativo')
+})
+console.log(menu)
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
-
+menu.forEach((item)=>{
+  if(item != menu[0])
+  item.classList.remove('ativo')
+})
+console.log(menu)
 // Verifique se as imagens possuem o atributo alt
 
 // Modifique o href do link externo no menu
