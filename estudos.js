@@ -157,10 +157,18 @@ console.log(menu)
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
 menu.forEach((item)=>{
   if(item != menu[0])
-  item.classList.remove('ativo')
+    item.classList.remove('ativo')
 })
 console.log(menu)
 // Verifique se as imagens possuem o atributo alt
-
+const imags = document.querySelectorAll('img');
+imags.forEach((item)=>{
+  if(item.hasAttribute('alt'))
+    console.log('Tudo certo')
+  else
+  console.log('Algo esta errado')
+})
 // Modifique o href do link externo no menu
-
+const LinkExterno = document.querySelector('[href^="h"]');
+LinkExterno.setAttribute('href', 'https://www.youtube.com')
+console.log(LinkExterno)
