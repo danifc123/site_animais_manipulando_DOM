@@ -148,27 +148,26 @@ imgs.forEach(() => i++);
 
 //Exercícios
 // Adicione a classe ativo a todos os itens do menu
-const menu = document.querySelectorAll('.menu a')
-
-menu.forEach((item)=>{
-  item.classList.add('ativo')
-})
-console.log(menu)
+// const selectImg = document.querySelectorAll('.menu a');
+// selectImg.forEach((item)=>{
+//   item.classList.add('ativo')
+// })
+// console.log(selectImg);
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
-menu.forEach((item)=>{
-  if(item != menu[0])
-    item.classList.remove('ativo')
-})
-console.log(menu)
+// selectImg.forEach((item)=>{
+//   if(item != selectImg[0]) 
+//   item.classList.remove('ativo')
+// })
+// console.log(selectImg);
 // Verifique se as imagens possuem o atributo alt
-const imags = document.querySelectorAll('img');
-imags.forEach((item)=>{
-  if(item.hasAttribute('alt'))
-    console.log('Tudo certo')
-  else
-  console.log('Algo esta errado')
-})
+// const imagem = document.querySelectorAll('img');
+// imagem.forEach((item)=>{
+//   if(item.hasAttribute('alt'))
+//     console.log('Certo');
+//   else
+//     console.log('Errado');
+// })
 // Modifique o href do link externo no menu
-const LinkExterno = document.querySelector('[href^="h"]');
-LinkExterno.setAttribute('href', 'https://www.youtube.com')
-console.log(LinkExterno)
+// const link = document.querySelector('[href^="http"]');
+// link.setAttribute('href', 'https://www.youtube.com/');
+// console.log(link)
