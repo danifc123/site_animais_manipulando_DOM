@@ -148,26 +148,37 @@ imgs.forEach(() => i++);
 
 //Exercícios
 // Adicione a classe ativo a todos os itens do menu
-// const selectImg = document.querySelectorAll('.menu a');
-// selectImg.forEach((item)=>{
-//   item.classList.add('ativo')
-// })
-// console.log(selectImg);
+
+const selectMenu = document.querySelectorAll('.menu a');
+
+selectMenu.forEach((item)=>{
+  item.classList.add('ativo');
+})
+console.log(selectMenu);
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
-// selectImg.forEach((item)=>{
-//   if(item != selectImg[0]) 
-//   item.classList.remove('ativo')
-// })
-// console.log(selectImg);
+selectMenu.forEach((item)=>{
+    // item.classList.remove('ativo');
+    if(item != selectMenu[0])
+        item.classList.remove('ativo');
+})
+// selectMenu[0].classList.add('ativo');
+console.log(selectMenu);
 // Verifique se as imagens possuem o atributo alt
-// const imagem = document.querySelectorAll('img');
-// imagem.forEach((item)=>{
-//   if(item.hasAttribute('alt'))
-//     console.log('Certo');
-//   else
-//     console.log('Errado');
+const selectIMG = document.querySelectorAll('img');
+selectIMG.forEach((item)=>{
+  if(item.getAttribute('alt')){
+    console.log('Certo')
+  }else{
+    console.log('errado')
+  }
+})
+// const selectImagem = document.querySelectorAll('img');
+// selectImagem.forEach((item)=>{
+// console.log(item.attributes.alt);
 // })
+
+
 // Modifique o href do link externo no menu
-// const link = document.querySelector('[href^="http"]');
-// link.setAttribute('href', 'https://www.youtube.com/');
-// console.log(link)
+const alteraHref = document.querySelector('[href^="https"]')
+alteraHref.setAttribute('href', 'https://www.youtube.com/shorts/TNC_C_zZb8Q')
+console.log(alteraHref)
